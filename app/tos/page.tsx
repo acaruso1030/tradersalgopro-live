@@ -1,99 +1,102 @@
+// app/terms-of-service/page.tsx
+
 import Link from "next/link";
 import { getSEOTags } from "@/lib/seo";
 import config from "@/config";
 
-// CHATGPT PROMPT TO GENERATE YOUR TERMS & SERVICES — replace with your own data 👇
-
-// 1. Go to https://chat.openai.com/
-// 2. Copy paste bellow
-// 3. Replace the data with your own (if needed)
-// 4. Paste the answer from ChatGPT directly in the <pre> tag below
-
-// You are an excellent lawyer.
-
-// I need your help to write a simple Terms & Services for my website. Here is some context:
-// - Website: https://shipfa.st
-// - Name: ShipFast
-// - Contact information: marc@shipfa.st
-// - Description: A JavaScript code boilerplate to help entrepreneurs launch their startups faster
-// - Ownership: when buying a package, users can download code to create apps. They own the code but they do not have the right to resell it. They can ask for a full refund within 7 day after the purchase.
-// - User data collected: name, email and payment information
-// - Non-personal data collection: web cookies
-// - Link to privacy-policy: https://shipfa.st/privacy-policy
-// - Governing Law: France
-// - Updates to the Terms: users will be updated by email
-
-// Please write a simple Terms & Services for my site. Add the current date. Do not add or explain your reasoning. Answer:
-
 export const metadata = getSEOTags({
-  title: `Terms and Conditions | ${config.appName}`,
-  canonicalUrlRelative: "/tos",
+  title: `Terms of Service | ${config.appName}`,
+  canonicalUrlRelative: "/terms-of-service",
 });
 
-const TOS = () => {
+const TermsOfService = () => {
   return (
-    <main className="max-w-xl mx-auto">
-      <div className="p-5">
-        <Link href="/" className="btn btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="w-5 h-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
-              clipRule="evenodd"
-            />
-          </svg>
-          Back
-        </Link>
-        <h1 className="text-3xl font-extrabold pb-6">
-          Terms and Conditions for {config.appName}
-        </h1>
-
-        <pre
-          className="leading-relaxed whitespace-pre-wrap"
-          style={{ fontFamily: "sans-serif" }}
+    <main className="max-w-4xl mx-auto px-6 py-10">
+      <Link href="/" className="btn btn-ghost mb-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="w-5 h-5"
         >
-          {`Last Updated: September 26, 2023
+          <path
+            fillRule="evenodd"
+            d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
+            clipRule="evenodd"
+          />
+        </svg>
+        Back
+      </Link>
 
-Welcome to ShipFast!
+      <h1 className="text-3xl font-extrabold mb-6">Terms of Service</h1>
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+      <div className="prose max-w-none">
+        <p>Last Updated: August 6, 2025</p>
 
-1. Description of ShipFast
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By accessing or using the TradersAlgoPro platform (“Service”), you agree to be legally
+          bound by these Terms of Service. If you do not agree to these terms, you may not access
+          or use the Service.
+        </p>
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+        <h2>2. Services Provided</h2>
+        <p>
+          TradersAlgoPro provides stock scanning tools, educational resources, and trade alert
+          systems. This content is intended for informational and educational purposes only and
+          does not constitute financial advice.
+        </p>
 
-2. Ownership and Usage Rights
+        <h2>3. No Refund Policy</h2>
+        <p>
+          All purchases made on TradersAlgoPro are **final and non-refundable**, including but not
+          limited to:
+        </p>
+        <ul>
+          <li>Monthly or yearly subscriptions</li>
+          <li>One-time Quantis™ purchases</li>
+          <li>Lifetime plans or upgrades</li>
+        </ul>
+        <p>
+          Due to the nature of instant digital access to proprietary software, educational content,
+          and stock alerts, we do **not offer refunds** under any circumstances. Please review all
+          plans carefully before purchasing.
+        </p>
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+        <h2>4. Membership Access</h2>
+        <p>
+          You must maintain an active subscription to access the features associated with your plan.
+          Access may be revoked for misuse, sharing login credentials, or violation of our rules.
+        </p>
 
-3. User Data and Privacy
+        <h2>5. Disclaimer of Warranties</h2>
+        <p>
+          TradersAlgoPro provides no guarantees of stock performance, trade success, or financial
+          returns. You use all features at your own risk. We do not make investment recommendations.
+        </p>
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+        <h2>6. Limitation of Liability</h2>
+        <p>
+          We are not liable for any loss or damage resulting from the use of the Service,
+          including but not limited to trading losses, account restrictions, or business
+          interruption.
+        </p>
 
-4. Non-Personal Data Collection
+        <h2>7. Modifications</h2>
+        <p>
+          We reserve the right to update or change these terms at any time. Continued use of the
+          Service after changes are made constitutes acceptance of the revised terms.
+        </p>
 
-We use web cookies to collect non-personal data for the purpose of improving our services and user experience.
-
-5. Governing Law
-
-These Terms are governed by the laws of France.
-
-6. Updates to the Terms
-
-We may update these Terms from time to time. Users will be notified of any changes via email.
-
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
-
-Thank you for using ShipFast!`}
-        </pre>
+        <h2>8. Contact Information</h2>
+        <p>
+          For questions, contact us at:
+          <br />
+          <strong>Email:</strong> {config.resend.supportEmail || "support@tradersalgopro.com"}
+        </p>
       </div>
     </main>
   );
 };
 
-export default TOS;
+export default TermsOfService;
