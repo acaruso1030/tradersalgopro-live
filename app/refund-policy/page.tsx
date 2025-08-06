@@ -1,3 +1,5 @@
+// app/refund-policy/page.tsx
+
 import Link from "next/link";
 import { getSEOTags } from "@/lib/seo";
 import config from "@/config";
@@ -9,57 +11,51 @@ export const metadata = getSEOTags({
 
 const RefundPolicy = () => {
   return (
-    <main className="max-w-xl mx-auto">
-      <div className="p-5">
-        <Link href="/" className="btn btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="w-5 h-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
-              clipRule="evenodd"
-            />
-          </svg>{" "}
-          Back
-        </Link>
-        <h1 className="text-3xl font-extrabold pb-6">
-          Refund Policy for {config.appName}
-        </h1>
-
-        <pre
-          className="leading-relaxed whitespace-pre-wrap"
-          style={{ fontFamily: "sans-serif" }}
+    <main className="max-w-4xl mx-auto px-6 py-10">
+      <Link href="/" className="btn btn-ghost mb-4 inline-flex items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="w-5 h-5"
         >
-          {`Last Updated: ${new Date().toISOString().split("T")[0]}
+          <path
+            fillRule="evenodd"
+            d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
+            clipRule="evenodd"
+          />
+        </svg>
+        <span className="ml-2">Back</span>
+      </Link>
 
-At ${config.appName}, all sales are final.
+      <h1 className="text-3xl font-extrabold mb-6">Refund Policy</h1>
 
-Due to the immediate access to premium digital content, proprietary tools, exclusive alerts, training resources, and protected dashboards, we do not offer refunds under any circumstances — including but not limited to:
+      <div className="prose max-w-none">
+        <p><strong>Last Updated:</strong> August 6, 2025</p>
 
-- Change of mind
-- Lack of usage or engagement
-- Misunderstanding of product features
-- Inability to profit or generate returns
+        <p>
+          At TradersAlgoPro, all purchases are <strong>final and non-refundable</strong>. This includes:
+        </p>
 
-By purchasing any membership tier (monthly, annual, or lifetime), or any digital access to the ${config.appName} platform (including Quantis), you agree to this strict refund policy.
+        <ul>
+          <li>Monthly and yearly subscriptions</li>
+          <li>Quantis™ one-time and lifetime access purchases</li>
+          <li>Any upgrades, add-ons, or downloadable content</li>
+        </ul>
 
-**Why No Refunds?**
-This policy protects our platform from abuse and ensures all users receive secure, non-transferable access to digital services and educational materials. Once purchased, digital access is instant and cannot be undone.
+        <p>
+          Due to the instant nature of digital access to proprietary software, educational materials, stock alerts, and analytics tools, we do not offer refunds under any circumstances. By purchasing, you acknowledge and agree to this policy.
+        </p>
 
-**Chargeback Policy**
-All chargebacks or payment disputes will be strongly contested. Evidence of digital access, logins, platform usage, and our visible refund policy will be provided to payment processors.
+        <p>
+          We encourage all users to carefully review available documentation, demos, and pricing details before purchasing.
+        </p>
 
-If you have any concerns or technical issues, we are happy to assist — but we do not offer refunds for digital access.
-
-For help or support, contact us directly at: ${config.resend.supportEmail}
-
-Thank you for understanding our position and respecting our terms.
-`}
-        </pre>
+        <p>
+          For additional questions, contact us at:
+          <br />
+          <strong>Email:</strong> {config.resend?.supportEmail || "support@tradersalgopro.com"}
+        </p>
       </div>
     </main>
   );

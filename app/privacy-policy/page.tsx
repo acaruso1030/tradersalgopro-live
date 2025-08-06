@@ -25,47 +25,58 @@ const PrivacyPolicy = () => {
               d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
               clipRule="evenodd"
             />
-          </svg>{" "}
-          Back
+          </svg>
+          <span className="ml-2">Back</span>
         </Link>
+
         <h1 className="text-3xl font-extrabold pb-6">
           Privacy Policy for {config.appName}
         </h1>
 
-        <pre
-          className="leading-relaxed whitespace-pre-wrap"
-          style={{ fontFamily: "sans-serif" }}
-        >
-          {`Last Updated: 2025-08-06
+        <div className="leading-relaxed whitespace-pre-wrap font-sans text-sm text-gray-800">
+          <p><strong>Last Updated:</strong> August 6, 2025</p>
+          <p className="mt-4">
+            Thank you for using TradersAlgoPro ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our platform.
+          </p>
 
-Thank you for using TradersAlgoPro ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our platform.
+          <p className="mt-4">By accessing or using the platform, you agree to this Privacy Policy.</p>
 
-By accessing or using the platform, you agree to this Privacy Policy.
+          <h2 className="mt-6 font-bold">1. Information We Collect</h2>
+          <ul className="list-disc list-inside">
+            <li>Name and Email: Used for login and support.</li>
+            <li>Payment Info: Securely processed by Stripe, never stored on our servers.</li>
+            <li>Cookies & IP: Used to improve user experience.</li>
+          </ul>
 
-1. Information We Collect
-- Name and Email: Used for login and support.
-- Payment Info: Securely processed by Stripe, never stored on our servers.
-- Cookies & IP: Used to improve user experience.
+          <h2 className="mt-6 font-bold">2. Purpose of Collection</h2>
+          <ul className="list-disc list-inside">
+            <li>Account management</li>
+            <li>Alert delivery (Power/Hustle/Quantis)</li>
+            <li>Product improvement</li>
+          </ul>
 
-2. Purpose of Collection
-- Account management
-- Alert delivery (Power/Hustle/Quantis)
-- Product improvement
+          <h2 className="mt-6 font-bold">3. Data Sharing</h2>
+          <p>
+            No data is sold or shared with 3rd parties, except as required for payment processing or legal obligations.
+          </p>
 
-3. Data Sharing
-- No data is sold or shared with 3rd parties, except as required for payment processing or legal obligations.
+          <h2 className="mt-6 font-bold">4. Children's Privacy</h2>
+          <p>
+            TradersAlgoPro is not intended for users under 13.
+          </p>
 
-4. Children's Privacy
-- TradersAlgoPro is not intended for users under 13.
+          <h2 className="mt-6 font-bold">5. Changes</h2>
+          <p>
+            We will notify users of material changes via email.
+          </p>
 
-5. Changes
-- We will notify users of material changes via email.
+          <h2 className="mt-6 font-bold">6. Contact Us</h2>
+          <p>Email: support@tradersalgopro.com</p>
 
-6. Contact Us
-Email: support@tradersalgopro.com
-
-Use of TradersAlgoPro implies acceptance of this policy.`}
-        </pre>
+          <p className="mt-4">
+            Use of TradersAlgoPro implies acceptance of this policy.
+          </p>
+        </div>
       </div>
     </main>
   );

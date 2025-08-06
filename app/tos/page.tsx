@@ -12,7 +12,7 @@ export const metadata = getSEOTags({
 const TermsOfService = () => {
   return (
     <main className="max-w-4xl mx-auto px-6 py-10">
-      <Link href="/" className="btn btn-ghost mb-4">
+      <Link href="/" className="btn btn-ghost mb-4 inline-flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -25,32 +25,28 @@ const TermsOfService = () => {
             clipRule="evenodd"
           />
         </svg>
-        Back
+        <span className="ml-2">Back</span>
       </Link>
 
       <h1 className="text-3xl font-extrabold mb-6">Terms of Service</h1>
 
       <div className="prose max-w-none">
-        <p>Last Updated: August 6, 2025</p>
+        <p><strong>Last Updated:</strong> August 6, 2025</p>
 
         <h2>1. Acceptance of Terms</h2>
         <p>
           By accessing or using the TradersAlgoPro platform (“Service”), you agree to be legally
-          bound by these Terms of Service. If you do not agree to these terms, you may not access
-          or use the Service.
+          bound by these Terms of Service. If you do not agree to these terms, do not use the Service.
         </p>
 
         <h2>2. Services Provided</h2>
         <p>
-          TradersAlgoPro provides stock scanning tools, educational resources, and trade alert
-          systems. This content is intended for informational and educational purposes only and
-          does not constitute financial advice.
+          TradersAlgoPro provides stock scanning tools, educational materials, and trade alerts. All content is for informational and educational use only and does not constitute financial advice.
         </p>
 
         <h2>3. No Refund Policy</h2>
         <p>
-          All purchases made on TradersAlgoPro are **final and non-refundable**, including but not
-          limited to:
+          All purchases made on TradersAlgoPro are <strong>final and non-refundable</strong>, including:
         </p>
         <ul>
           <li>Monthly or yearly subscriptions</li>
@@ -58,41 +54,35 @@ const TermsOfService = () => {
           <li>Lifetime plans or upgrades</li>
         </ul>
         <p>
-          Due to the nature of instant digital access to proprietary software, educational content,
-          and stock alerts, we do **not offer refunds** under any circumstances. Please review all
-          plans carefully before purchasing.
+          Due to instant digital access to proprietary tools and education, we do <strong>not</strong> offer refunds under any circumstance. Please review plans carefully before purchasing.
         </p>
 
         <h2>4. Membership Access</h2>
         <p>
-          You must maintain an active subscription to access the features associated with your plan.
-          Access may be revoked for misuse, sharing login credentials, or violation of our rules.
+          You must maintain an active subscription to access features tied to your plan. We may revoke access if account misuse is detected (e.g. sharing credentials).
         </p>
 
         <h2>5. Disclaimer of Warranties</h2>
         <p>
-          TradersAlgoPro provides no guarantees of stock performance, trade success, or financial
-          returns. You use all features at your own risk. We do not make investment recommendations.
+          We provide no guarantees of financial performance, stock behavior, or trading success. Use all tools at your own risk. We do not offer investment advice.
         </p>
 
         <h2>6. Limitation of Liability</h2>
         <p>
-          We are not liable for any loss or damage resulting from the use of the Service,
-          including but not limited to trading losses, account restrictions, or business
-          interruption.
+          TradersAlgoPro is not liable for any losses, damages, or disruptions caused by use of the platform, including financial losses or technical failures.
         </p>
 
         <h2>7. Modifications</h2>
         <p>
-          We reserve the right to update or change these terms at any time. Continued use of the
-          Service after changes are made constitutes acceptance of the revised terms.
+          We may update these terms at any time. Continued use of the platform after updates indicates your agreement to the new terms.
         </p>
 
         <h2>8. Contact Information</h2>
         <p>
-          For questions, contact us at:
+          Questions? Reach out to us:
           <br />
-          <strong>Email:</strong> {config.resend.supportEmail || "support@tradersalgopro.com"}
+          <strong>Email:</strong>{" "}
+          {config.resend?.supportEmail || "support@tradersalgopro.com"}
         </p>
       </div>
     </main>
