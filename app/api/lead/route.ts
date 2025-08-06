@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { NextResponse, NextRequest } from "next/server";
 import connectMongo from "@/lib/mongoose";
 import Lead from "@/models/Lead";
@@ -22,7 +23,7 @@ export async function POST(req: NextRequest) {
     // const lead = await Lead.findOne({ email: body.email });
 
     // if (!lead) {
-    // 	await Lead.create({ email: body.email });
+    //   await Lead.create({ email: body.email });
     // }
 
     return NextResponse.json({});
