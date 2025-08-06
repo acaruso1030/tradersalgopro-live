@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { getSEOTags } from "@/lib/seo";
 import config from "@/config";
@@ -35,7 +36,7 @@ const PrivacyPolicy = () => {
           <p><strong>Last Updated:</strong> August 6, 2025</p>
 
           <p className="mt-4">
-            Thank you for using TradersAlgoPro (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our platform.
+            Thank you for using TradersAlgoPro ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our platform.
           </p>
 
           <p className="mt-4">
@@ -58,10 +59,10 @@ const PrivacyPolicy = () => {
 
           <h2 className="mt-6 font-bold">3. Data Sharing</h2>
           <p>
-            No data is sold or shared with 3<sup>rd</sup> parties, except as required for payment processing or legal obligations.
+            No data is sold or shared with 3rd parties, except as required for payment processing or legal obligations.
           </p>
 
-          <h2 className="mt-6 font-bold">4. Children&apos;s Privacy</h2>
+          <h2 className="mt-6 font-bold">4. Children's Privacy</h2>
           <p>
             TradersAlgoPro is not intended for users under 13.
           </p>
