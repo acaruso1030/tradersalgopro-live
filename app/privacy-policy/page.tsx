@@ -1,5 +1,3 @@
-// app/privacy-policy/page.tsx
-
 import Link from "next/link";
 import { getSEOTags } from "@/lib/seo";
 import config from "@/config";
@@ -35,17 +33,20 @@ const PrivacyPolicy = () => {
 
         <div className="leading-relaxed whitespace-pre-wrap font-sans text-sm text-gray-800">
           <p><strong>Last Updated:</strong> August 6, 2025</p>
+
           <p className="mt-4">
-            Thank you for using TradersAlgoPro ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our platform.
+            Thank you for using TradersAlgoPro (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our platform.
           </p>
 
-          <p className="mt-4">By accessing or using the platform, you agree to this Privacy Policy.</p>
+          <p className="mt-4">
+            By accessing or using the platform, you agree to this Privacy Policy.
+          </p>
 
           <h2 className="mt-6 font-bold">1. Information We Collect</h2>
           <ul className="list-disc list-inside">
             <li>Name and Email: Used for login and support.</li>
             <li>Payment Info: Securely processed by Stripe, never stored on our servers.</li>
-            <li>Cookies & IP: Used to improve user experience.</li>
+            <li>Cookies &amp; IP: Used to improve user experience.</li>
           </ul>
 
           <h2 className="mt-6 font-bold">2. Purpose of Collection</h2>
@@ -60,7 +61,7 @@ const PrivacyPolicy = () => {
             No data is sold or shared with 3rd parties, except as required for payment processing or legal obligations.
           </p>
 
-          <h2 className="mt-6 font-bold">4. Children's Privacy</h2>
+          <h2 className="mt-6 font-bold">4. Children&apos;s Privacy</h2>
           <p>
             TradersAlgoPro is not intended for users under 13.
           </p>
