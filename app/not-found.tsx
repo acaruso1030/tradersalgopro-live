@@ -13,7 +13,7 @@ export default function NotFound() {
     }}>
       <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>404 - Page Not Found</h1>
       <p style={{ fontSize: "1.25rem", color: "#666" }}>
-        Sorry, the page you're looking for doesn’t exist.
+        Sorry, the page you&apos;re looking for doesn&apos;t exist.
       </p>
     </div>
   );
