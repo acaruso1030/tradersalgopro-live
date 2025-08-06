@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
 
           <h2 className="mt-6 font-bold">3. Data Sharing</h2>
           <p>
-            No data is sold or shared with 3rd parties, except as required for payment processing or legal obligations.
+            No data is sold or shared with 3<sup>rd</sup> parties, except as required for payment processing or legal obligations.
           </p>
 
           <h2 className="mt-6 font-bold">4. Children&apos;s Privacy</h2>
