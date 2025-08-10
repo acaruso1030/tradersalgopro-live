@@ -1,1 +1,7 @@
-﻿import { NextResponse } from "next/server"; export function GET(){ return NextResponse.json({ ok: true, ts: Date.now() }); }
+﻿import { NextResponse } from "next/server";
+export function GET() {
+  return NextResponse.json(
+    { ok: true, ts: Date.now() },
+    { headers: { "Cache-Control": "no-store" } }
+  );
+}
