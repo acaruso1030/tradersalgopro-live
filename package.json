@@ -63,20 +63,21 @@
     "tw-animate-css": "^1.3.6",
     "typescript": "^5"
   },
-  "description": "Hey maker 👋 it's Marc from [ShipFast](https://shipfa.st/docs). Let's get your startup off the ground, FAST ⚡️",
+  "description": "TradersAlgoPro LIVE Deployment",
   "main": "next-sitemap.config.js",
   "directories": {
     "lib": "lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acaruso1030/TradersAlgoPro_ShipFast.git"
+    "url": "git+https://github.com/acaruso1030/tradersalgopro-live.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/acaruso1030/TradersAlgoPro_ShipFast/issues"
+    "url": "https://github.com/acaruso1030/tradersalgopro-live/issues"
   },
-  "homepage": "https://github.com/acaruso1030/TradersAlgoPro_ShipFast#readme"
+  "homepage": "https://github.com/acaruso1030/tradersalgopro-live#readme"
 }
+
